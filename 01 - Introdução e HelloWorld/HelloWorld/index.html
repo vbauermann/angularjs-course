@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html ng-app="xuxa">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aula AngularJS</title>
+    <script src="angular.js"></script>
+    <script>
+        angular.module('xuxa', []);
+        angular
+            .module('xuxa')
+            .component('nomeCliente', {
+                template: 'Hello, {{vm.nome}}!',
+                bindings: {
+                    nome: '='
+                },
+                controllerAs: 'vm',
+                controller: function GreetUserController() {
+                    var vm = this;
+                }
+                
+            })
+            .controller('xuxaController', function ($scope) {
+                var vm = this;
+                vm.novocliente = {
+                    nome: null,
+                    idade: null
+                };
+                vm.titulo = 'Hello World!';
+                vm.clientes = [
+                    {
+                        nome: "João",
+                        idade: 19
+                    },
+                    {
+                        nome: "Gabriel",
+                        idade: 36
+                    }
+                ];
+                vm.exibirClientes = true;
+                vm.adicionarCliente = function (cliente) {
+                    vm.clientes.push({
+                        nome: cliente.nome,
+                        idade: cliente.idade
+                    });
+                    vm.novocliente = {
+                        nome: null,
+                        idade: null
+                    };
+
+                }
+                vm.removerCliente = function (nome) {
+                    if (nome === 'Gabriel')
+                        alert('Até JULHOOOOO');
+                    vm.clientes = vm.clientes.filter(function (c) { return c.nome !== nome });
+                }
+            });
+
+        angular.module('xuxa')
+            .controller('didiController', function ($scope) {
+                $scope.titulo = 'Bye Bye World!';
+
+            });
+    </script>
+</head>
+
+<body>
+    <div ng-controller="xuxaController as vm">
+        {{vm.titulo}}
+        <input type="checkbox" ng-model="vm.exibirClientes">
+        <p ng-repeat="cliente in vm.clientes" ng-if="vm.exibirClientes === true">
+
+            <nome-cliente nome="cliente.nome"></nome-cliente>
+            - {{cliente.idade}}
+            <button ng-click="removerCliente(cliente.nome)">X</button>
+            
+        </p>
+        <p></p>
+        <p>Novo Cliente</p>
+        <input type="text" placeholder="Nome..." ng-model="vm.novocliente.nome">
+        <input type="number" placeholder="Idade..." ng-model="vm.novocliente.idade">
+        <button ng-click="vm.adicionarCliente(vm.novocliente)">Adicionar</button>
+    </div>
+    <div ng-controller="didiController">
+        {{titulo}}
+    </div>
+</body>
+
+</html>
