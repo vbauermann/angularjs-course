@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang=pt-br ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="AngularJs Course, feito por STI Society Tecnologia da Informação Ltda." name="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Course</title>
+
+    <!-- Estilos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/inline.css">
+
+    <!-- Libs -->
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-route.min.js"></script>
+
+    <!-- Root App -->
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/home.controller.js"></script>
+    <script src="js/controllers/contato.controller.js"></script>
+    <script src="js/controllers/sobre.controller.js"></script>
+    <!-- Componentes -->
+    <script src="js/components/nomeCliente.component.js"></script>
+
+</head>
+
+<body>
+    <!-- Inclui o header -->
+    <ng-include src="'views/header.html'"></ng-include>
+
+    <div style="margin-top: 95px;">
+        <!-- Renderiza o conteúdo das rotas -->
+        <ng-view></ng-view>
+    </div>
+
+    <!-- Cria um elemento footer -->
+    <footer>
+        <p>Inter Campeão do mundo </p>
+    </footer>
+</body>
+</html>

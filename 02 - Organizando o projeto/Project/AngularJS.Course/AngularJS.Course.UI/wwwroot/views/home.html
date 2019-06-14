@@ -1,0 +1,19 @@
+<div>
+    <div class="lista-clientes card content">
+        {{vm.titulo}}
+        <input type="checkbox" ng-model="vm.exibirClientes">
+        <p ng-repeat="cliente in vm.clientes" ng-if="vm.exibirClientes === true">
+
+            <nome-cliente nome="cliente.nome"></nome-cliente>
+            - {{cliente.idade}}
+            <button ng-click="vm.removerCliente(cliente.nome)" class="mdl-button">X</button>
+
+        </p>
+    </div>
+    <div class="card content">
+        <p>Novo Cliente</p>
+        <input type="text" placeholder="Nome..." ng-model="vm.novocliente.nome">
+        <input type="number" placeholder="Idade..." ng-model="vm.novocliente.idade">
+        <button class="mdl-button mdl-button--primary mdl-button--raised" ng-click="vm.adicionarCliente(vm.novocliente)">Adicionar</button>
+    </div>
+</div>
