@@ -6,3 +6,6 @@ Introdução à linguagem e exemplificação de sua estrutura base (modules, con
 
 # Aula 2 (14/06/2019)
 Análise das formas de organizar um projeto em angularjs, alteração da estrutura do exemplo das aulas e aticionado as primeiras páginas com rotas e includes.
+
+# Aula 3 (19/06/2019)
+Teste e utilização das diretivas mais comuns do AngularJs e criação de uma diretiva customizada que exibe um título e uma mensagem de erro.
