@@ -1,0 +1,45 @@
+<div>
+    <div class="lista-clientes card content">
+        {{vm.titulo}}
+        <ui-alert titulo="Ops! Algo ocorreu" ng-if="vm.erroAoIncluirCliente">
+            {{vm.erro}}
+        </ui-alert>
+
+
+        <input type="checkbox" ng-model="vm.exibirClientes">
+        <div ng-repeat="cliente in vm.clientes" ng-if="vm.exibirClientes === true"
+            ng-class="{'selecionado': cliente.selecionado}">
+
+            <div style="width: 20px; height: 20px; background-color: black; display: inline-block;"
+                ng-style="{'background-color': cliente.cor}"></div>
+            <input type="checkbox" ng-change="cliente.cor === 'blue' ? cliente.cor = 'red' : cliente.cor = 'blue'"
+                ng-model="cliente.selecionado">
+            <nome-cliente nome="cliente.nome"></nome-cliente>
+            - {{cliente.idade}}
+            <button ng-click="vm.removerCliente(cliente.nome)" ng-if="cliente.selecionado" class="mdl-button">X</button>
+            <button ng-click="vm.removerCliente(cliente.nome)" ng-hide="!cliente.selecionado"
+                class="mdl-button">X</button>
+
+            </p>
+        </div>
+    </div>
+    <div class="card content">
+        {{vm.novocliente}}
+        <form name="novoCLiente">
+            <p>Novo Cliente</p>
+
+            <input required type="text" placeholder="Nome..." ng-model="vm.novocliente.nome">
+
+            <br/>
+            <input required type="number" placeholder="Idade..." ng-model="vm.novocliente.idade">
+            <br/>
+
+            <select required ng-model="vm.novocliente.pais"
+                ng-options="pais.sigla as pais.nome group by pais.regiao for pais in vm.paises"></select>
+                <br/>
+            <button ng-click="vm.adicionarCliente(vm.novocliente)" ng-disabled="novoCLiente.$invalid">Adicionar</button>
+
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<style>
+    .ui-alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+
+    }
+
+    .ui-alert .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .ui-alert .closebtn:hover {
+        color: #c41a0e;
+    }
+</style>
+
+<div class="ui-alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="ui-alert-title">{{title}}</div>
+    <div class="ui-alert-message" ng-transclude></div>
+</div>
+
+
+<script>
+    angular.module('app')
+        .directive('uiAlert', function () {
+            return {
+                templateUrl: 'view/alert.html',
+                replace: true,
+                restrict: 'AE',
+                scope: {
+                    title: '@'
+                },
+                transclude: true
+            };
+        });
+</script>

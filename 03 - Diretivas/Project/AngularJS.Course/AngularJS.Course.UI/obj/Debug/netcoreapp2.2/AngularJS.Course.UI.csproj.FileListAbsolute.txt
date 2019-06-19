@@ -1,0 +1,28 @@
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.deps.json
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.runtimeconfig.json
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.runtimeconfig.dev.json
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.dll
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.pdb
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.csprojAssemblyReference.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.csproj.CoreCompileInputs.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.RazorAssemblyInfo.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.RazorAssemblyInfo.cs
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.AssemblyInfoInputs.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.AssemblyInfo.cs
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.RazorTargetAssemblyInfo.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.dll
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\02 - Estruturando uma aplicação\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.pdb
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.deps.json
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.runtimeconfig.json
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.runtimeconfig.dev.json
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.dll
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\bin\Debug\netcoreapp2.2\AngularJS.Course.UI.pdb
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.csprojAssemblyReference.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.csproj.CoreCompileInputs.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.RazorAssemblyInfo.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.RazorAssemblyInfo.cs
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.AssemblyInfoInputs.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.AssemblyInfo.cs
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.RazorTargetAssemblyInfo.cache
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.dll
+C:\Users\VBSilveira\Desktop\Mistérios do FrontEnd - AngularJS\03 - Diretivas\Project\AngularJS.Course\AngularJS.Course.UI\obj\Debug\netcoreapp2.2\AngularJS.Course.UI.pdb
