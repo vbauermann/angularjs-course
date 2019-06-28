@@ -9,3 +9,6 @@ Análise das formas de organizar um projeto em angularjs, alteração da estrutu
 
 # Aula 3 (19/06/2019)
 Teste e utilização das diretivas mais comuns do AngularJs e criação de uma diretiva customizada que exibe um título e uma mensagem de erro.
+
+# Aula 4 (28/06/2019)
+Criação de API e banco de dados, plugando a interface com a API e utilizando os filtros nativos do AngularJs.
