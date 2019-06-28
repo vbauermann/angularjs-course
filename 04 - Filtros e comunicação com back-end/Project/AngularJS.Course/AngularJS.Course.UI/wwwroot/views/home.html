@@ -1,0 +1,78 @@
+<section>
+    <div class="lista-clientes card content">
+        {{vm.titulo}}
+
+        <ui-alert titulo="Ops! Algo ocorreu" ng-if="vm.erroAoIncluirCliente">
+            {{vm.erro}}
+        </ui-alert>
+        <label>Filtro</label>
+        <input class="form-control" required type="text" placeholder="Informe seu critério..."
+               ng-model="vm.criterioDeBusca">
+        <table style="margin-top:20px;">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td ng-click="vm.alterarCriterioDeOrdenacao('nome')">Nome</td>
+                    <td ng-click="vm.alterarCriterioDeOrdenacao('idade')">Idade</td>
+                    <td>Cor</td>
+                    <td ng-click="vm.alterarCriterioDeOrdenacao('dataInscricao')">Inscricao</td>
+                    <td>Mensalidade</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="cliente in vm.clientes | orderBy: vm.criterioDeOrdenacao:vm.criterioDeOrdenacaoReverse  | filter: vm.criterioDeBusca   | limitTo: 3" ng-class="{'selecionado': cliente.selecionado}">
+                    <td>
+                        <input type="checkbox"
+                               ng-change="cliente.selecionado ? cliente.cor = 'red' : cliente.cor = 'blue'"
+                               ng-model="cliente.selecionado">
+                    </td>
+                    <td>
+                        <nome-cliente nome="cliente.nome"></nome-cliente>
+                    </td>
+                    <td>
+                        {{cliente.idade | number}}
+                    </td>
+                    <td>
+                        <div style="width: 20px; height: 20px; background-color: black; display: inline-block; margin-top: 7px;"
+                             ng-style="{'background-color': cliente.cor}"></div>
+                    </td>
+                    <td>
+                        {{cliente.dataInscricao | date: "dd/MM/yyyy"}}
+                    </td>
+                    <td>
+                        {{cliente.mensalidade | currency:'R$':1 }}
+                    </td>
+                    <td>
+                        <button ng-click="vm.removerCliente(cliente.id)" class="mdl-button">X</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card content">
+        <p style="text-align:center;">Novo Cliente</p>
+        <form name="novoCLiente">
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Nome</label>
+                    <input class="form-control" required type="text" placeholder="Informe seu nome..." ng-model="vm.novocliente.nome">
+                </div>
+                <div class="col-lg-6">
+                    <label>Idade</label>
+                    <input class="form-control" required type="number" placeholder="Informe sua idade..." ng-model="vm.novocliente.idade">
+                </div>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-lg-6">
+                    <label>Origem</label>
+                    <select class="form-control"
+                            required
+                            ng-model="vm.novocliente.pais"
+                            ng-options="pais.sigla as pais.nome group by pais.regiao for pais in vm.paises"></select>
+                </div>
+            </div>
+            <button style="float:right;" ng-click="vm.adicionarCliente(vm.novocliente)" ng-disabled="novoCLiente.$invalid">Adicionar</button>
+        </form>
+    </div>
+</section>

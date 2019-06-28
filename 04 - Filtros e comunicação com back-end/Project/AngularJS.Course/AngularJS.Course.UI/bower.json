@@ -1,0 +1,7 @@
+{
+  "name": "angularjs-course",
+  "private": true,
+  "dependencies": {
+    "angular": "1.7.8"
+  }
+}
